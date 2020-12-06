@@ -1,0 +1,37 @@
+// Aligning
+.txt-center {
+  text-align: center;
+}
+
+// Dim
+.full-width {
+  width: 100%;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark,
+.btn-light {
+  @extend .btn;
+}
+
+.btn-dark {
+  background: darken($color: $primary-color, $amount: 50);
+  color: #fff;
+}
+.btn-light {
+  background: lighten($color: $primary-color, $amount: 50);
+  color: #333;
+}
